@@ -5,8 +5,8 @@
 class EmailParser
   @@emails = []
 
-  def parse
-
+  def parse(emails)
+    email.split(/[,\s]/)
   end
 
 
