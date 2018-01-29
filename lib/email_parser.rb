@@ -7,7 +7,7 @@ class EmailParser
   def initialize
     EmailParser.new
   end
-  
+
   def parse(emails)
     email.split(/[,\s]/)
   end
