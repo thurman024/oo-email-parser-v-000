@@ -10,7 +10,14 @@ class EmailParser
   end
 
   def parse
-    @emails.split(/[,\s]?\s/)
+    list = @emails.split(/[,\s]?\s/)
+    return_emails = []
+    list.each do |e| 
+      if !return_emails.include?(e)
+        return_emails << e
+      end
+    end
+    return_emails
   end
 
 
